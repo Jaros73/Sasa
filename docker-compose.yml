@@ -1,5 +1,6 @@
 ﻿services:
   ukotoru-web:
+    container_name: ukotoru-web
     build:
       context: .
       dockerfile: Dockerfile
