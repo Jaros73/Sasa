@@ -19,3 +19,4 @@
 networks:
   edge:
     external: true
+    name: revicall_edge
