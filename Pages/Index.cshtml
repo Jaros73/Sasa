@@ -1,21 +1,22 @@
-﻿@page
+﻿@page "/{kultura:regex(^cs|en|de$)?}"
 @model IndexModel
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Sasa.SharedResource> Localizer
+
 @{
-    ViewData["Title"] = "U Kotorů";
+    ViewData["Title"] = Localizer["PageTitle"];
 }
 
 <section id="uvod" class="hero-section">
     <div class="hero-overlay">
         <div class="container hero-content">
-            <p class="hero-kicker">Šumava · Klid · Příroda</p>
-            <h1>Vítáme vás u Kotorů</h1>
+            <p class="hero-kicker">@Localizer["HeroKicker"]</p>
+            <h1>@Localizer["HeroTitle"]</h1>
             <p class="hero-text">
-                Nabízíme ubytování v soukromí na Horské Kvildě v centrální části NP Šumava.
-                Klidné prostředí, krásná příroda a výborné podmínky pro turistiku, cyklistiku i zimní pobyt.
+                @Localizer["HeroText"]
             </p>
             <div class="hero-actions">
-                <a class="button button-primary" href="#ubytovani">Zjistit více</a>
-                <a class="button button-secondary" href="#kontakt">Kontakt</a>
+                <a class="button button-primary" href="#ubytovani">@Localizer["HeroButtonMore"]</a>
+                <a class="button button-secondary" href="#kontakt">@Localizer["HeroButtonContact"]</a>
             </div>
         </div>
     </div>
@@ -24,45 +25,15 @@
 <section class="content-section section-light">
     <div class="container narrow">
         <div class="section-heading">
-            <h2>Úvod</h2>
+            <h2>@Localizer["IntroHeading"]</h2>
         </div>
 
         <div class="text-card">
-            <p>
-                Nabízíme ubytování v soukromí na Horské Kvildě (1070 m.n.m.) v centrální části NP Šumava.
-                Horská Kvilda je obec s typickou roztroušenou zástavbou a její okolí se může pyšnit vysokou mírou
-                zachovalosti přírody, ať již jde o louky, vřesoviště, rašeliniště nebo lesy.
-            </p>
-
-            <p>
-                Horská Kvilda je křižovatkou turistických značených cest sloužících v zimním období jako běžecké
-                lyžařské trasy a v letním období jako cyklotrasy a pěší cesty. Jedná se o standardně značené cesty KČT.
-                Z nejzajímavějších míst vybíráme trasy na Kvildu a k pramenům Vltavy nebo na Bučinu a Knížecí Pláně,
-                na Zlatou studnu a Churáňov, na Filipovu Huť a Modravu, na Zhůří a Turnerovu chatu nebo údolím
-                Hamerského potoka k Antýglu a k Vchynicko-Tetovskému plavebnímu kanálu.
-            </p>
-
-            <p>
-                Dále je zde několik neznačených tras vhodných pro procházky okolím
-                (např. na Jezerní slať a k rysímu a jelenímu výběhu u Kvildy, na Výhledy, na Horní Antýgl
-                s výstupem na vrch Antýgl). Národní park Šumava přitahuje stále více vyznavačů cykloturistiky.
-                Mimo veřejné komunikace lze na kole jezdit pouze po vyznačených cyklotrasách.
-            </p>
-
-            <p>
-                V letním období lze využít i cyklobusy, tedy dojet jednosměrně daleko jihovýchodním směrem
-                (Horní Vltavice, Boubínský prales) nebo západním (Prášily, Železná Ruda) či severním (Sušice).
-                Šumava nabízí ideální podmínky pro zimní turistiku na běžkách. Lyžařské trasy jsou udržovány
-                od 15.12. do 31.3. podle sněhových podmínek.
-            </p>
-
-            <p>
-                Horská Kvilda a její okolí je tradiční doménou lyžařské turistiky, ale v určité míře má co nabídnout
-                i těm, kteří chtějí běžky vyměnit za sjezdovky či snowboard. Nejbližší areál je na Kvildě (4 km),
-                je vhodný zejména pro začínající lyžaře, děti či výuku lyžování a snowboardingu (lyžařská škola).
-                Areál pro pokročilejší lyžaře je na Churáňově (mj. čtyřsedačka), příp. na německé straně Šumavy
-                (nejbližší je Mitterdorf).
-            </p>
+            <p>@Localizer["IntroParagraph1"]</p>
+            <p>@Localizer["IntroParagraph2"]</p>
+            <p>@Localizer["IntroParagraph3"]</p>
+            <p>@Localizer["IntroParagraph4"]</p>
+            <p>@Localizer["IntroParagraph5"]</p>
         </div>
     </div>
 </section>
@@ -70,36 +41,26 @@
 <section id="ubytovani" class="content-section section-light">
     <div class="container narrow">
         <div class="section-heading">
-            <h2>Ubytování</h2>
+            <h2>@Localizer["AccommodationHeading"]</h2>
         </div>
 
         <div class="text-card">
+            <p>@Localizer["AccommodationParagraph1"]</p>
+            <p>@Localizer["AccommodationParagraph2"]</p>
             <p>
-                Pro dostatečný klid Vaší dovolené je chalupa postavena na krásném místě mimo hlavní silnici,
-                parkování je na vlastním pozemku. Poskytujeme ubytování v apartmánech s vlastním příslušenstvím
-                a možností vlastního vaření, restaurace jsou do 250 metrů
-                (Hospoda U krámu, hotel Rankl).
-            </p>
-
-            <p>
-                Apartmány mají vlastní sociální zařízení (WC, sprchový kout), kuchyňskou linku
-                (lednice, el. dvouvařič, rychlovarná konvice a základní kuchyňské potřeby), televizi
-                a připojení k internetu. Mikrovlnná trouba je k použití ve společenské místnosti.
-                Pro děti do 3 let je k dispozici dětská postýlka.
-            </p>
-
-            <p>
-                Vytápění je ústřední, v celém objektu platí <strong>zákaz kouření</strong>,
-                vstup pouze <strong>v domácí obuvi</strong>. V chalupě je k dispozici společenská místnost,
-                dále je zde možnost uložení jízdních kol a lyží. Pro hosty je určeno i venkovní posezení a ohniště.
+                @Localizer["AccommodationParagraph3Part1"]
+                <strong>@Localizer["AccommodationNoSmoking"]</strong>,
+                @Localizer["AccommodationParagraph3Part2"]
+                <strong>@Localizer["AccommodationIndoorShoes"]</strong>.
+                @Localizer["AccommodationParagraph3Part3"]
             </p>
         </div>
 
         <div class="gallery-grid gallery-ubytovani">
-            <div class="gallery-item"><img src="~/images/gallery/galerie-01.jpg" alt="Ubytování 1" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-02.jpg" alt="Ubytování 2" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-03.jpg" alt="Ubytování 3" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-04.jpg" alt="Ubytování 4" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-01.jpg" alt="@Localizer["AccommodationImage1Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-02.jpg" alt="@Localizer["AccommodationImage2Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-03.jpg" alt="@Localizer["AccommodationImage3Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-04.jpg" alt="@Localizer["AccommodationImage4Alt"]" /></div>
         </div>
     </div>
 </section>
@@ -107,170 +68,150 @@
 <section id="cenik" class="content-section section-accent">
     <div class="container narrow">
         <div class="section-heading">
-            <h2>Ceník</h2>
-            <p>Ceník platný od 1. 1. 2026</p>
+            <h2>@Localizer["PriceHeading"]</h2>
+            <p>@Localizer["PriceValidFrom"]</p>
         </div>
 
         <div class="price-card">
+            <p>@Localizer["PriceIntroParagraph1"]</p>
             <p>
-                Letní a zimní pobyty jsou zpravidla týdenní (so–so). Mimo letní a zimní sezonu
-                je možno objednat i kratší pobyty.
-            </p>
-
-            <p>
-                Nástup na ubytování je <strong>od 15:30 hod. do 19:30 hod.</strong>,
-                při ukončení pobytu je nutné pokoje uvolnit <strong>do 10:00 hod.</strong>
+                @Localizer["PriceIntroParagraph2Part1"]
+                <strong>@Localizer["CheckInTime"]</strong>,
+                @Localizer["PriceIntroParagraph2Part2"]
+                <strong>@Localizer["CheckOutTime"]</strong>
             </p>
 
             <div class="price-table-wrapper">
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Služba</th>
-                            <th>Kč</th>
+                            <th>@Localizer["PriceTableService"]</th>
+                            <th>@Localizer["PriceTableCurrency"]</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Dospělý, dítě nad 12 let</td>
-                            <td>650 / noc</td>
+                            <td>@Localizer["PriceAdult"]</td>
+                            <td>@Localizer["PriceAdultValue"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 3 let (bez nároku na lůžko)</td>
-                            <td>Zdarma</td>
+                            <td>@Localizer["PriceChildUnder3"]</td>
+                            <td>@Localizer["PriceChildUnder3Value"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 12 let</td>
-                            <td>500 / noc</td>
+                            <td>@Localizer["PriceChildUnder12"]</td>
+                            <td>@Localizer["PriceChildUnder12Value"]</td>
                         </tr>
                         <tr>
-                            <td>Příplatek při ubytování pouze 1 osoby v apartmánu</td>
-                            <td>250 / noc</td>
+                            <td>@Localizer["PriceSingleOccupancy"]</td>
+                            <td>@Localizer["PriceSingleOccupancyValue"]</td>
                         </tr>
                         <tr>
-                            <td>Příplatek při ubytování pouze na 1 noc</td>
-                            <td>200 / osoba</td>
+                            <td>@Localizer["PriceOneNightOnly"]</td>
+                            <td>@Localizer["PriceOneNightOnlyValue"]</td>
                         </tr>
                         <tr>
-                            <td>Příplatek za domácí zvíře (po domluvě, pouze psi menších plemen)</td>
-                            <td>150 / noc</td>
+                            <td>@Localizer["PricePet"]</td>
+                            <td>@Localizer["PricePetValue"]</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>Velikonoční svátky (čtvrtek–pondělí)</h3>
+            <h3>@Localizer["EasterHeading"]</h3>
 
             <div class="price-table-wrapper">
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Služba</th>
-                            <th>Kč</th>
+                            <th>@Localizer["PriceTableService"]</th>
+                            <th>@Localizer["PriceTableCurrency"]</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Dospělý, dítě nad 12 let</td>
-                            <td>700 / noc</td>
+                            <td>@Localizer["PriceAdult"]</td>
+                            <td>@Localizer["EasterAdultValue"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 3 let (bez nároku na lůžko)</td>
-                            <td>Zdarma</td>
+                            <td>@Localizer["PriceChildUnder3"]</td>
+                            <td>@Localizer["PriceChildUnder3Value"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 12 let</td>
-                            <td>550 / noc</td>
+                            <td>@Localizer["PriceChildUnder12"]</td>
+                            <td>@Localizer["EasterChildUnder12Value"]</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <h3>Vánoční a novoroční svátky (23. 12. – 2. 1.)</h3>
+            <h3>@Localizer["ChristmasHeading"]</h3>
 
             <div class="price-table-wrapper">
                 <table class="price-table">
                     <thead>
                         <tr>
-                            <th>Služba</th>
-                            <th>Kč</th>
+                            <th>@Localizer["PriceTableService"]</th>
+                            <th>@Localizer["PriceTableCurrency"]</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Dospělý, dítě nad 12 let</td>
-                            <td>700 / noc</td>
+                            <td>@Localizer["PriceAdult"]</td>
+                            <td>@Localizer["ChristmasAdultValue"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 3 let (bez nároku na lůžko)</td>
-                            <td>Zdarma</td>
+                            <td>@Localizer["PriceChildUnder3"]</td>
+                            <td>@Localizer["PriceChildUnder3Value"]</td>
                         </tr>
                         <tr>
-                            <td>Dítě do 12 let</td>
-                            <td>550 / noc</td>
+                            <td>@Localizer["PriceChildUnder12"]</td>
+                            <td>@Localizer["ChristmasChildUnder12Value"]</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
             <p>
-                <strong>V listopadu a prosinci (do vánočních svátků) je zavřeno.</strong>
+                <strong>@Localizer["ClosedNotice"]</strong>
             </p>
 
             <p>
-                K ceně se připočítává místní poplatek <strong>(15 Kč / noc)</strong> z pobytu obci Horská Kvilda
-                (neplatí osoby mladší 18 let a osoby, které jsou držitelem průkazu ZTP/P a jejich průvodce),
-                za každý započatý den pobytu s výjimkou dne jeho počátku.
+                @Localizer["LocalFeeParagraphPart1"]
+                <strong>@Localizer["LocalFeeValue"]</strong>
+                @Localizer["LocalFeeParagraphPart2"]
             </p>
 
-            <h3>Objednávky ubytování a záloha</h3>
-            <p>
-                Objednávky zasílejte na e-mailovou adresu – uvádějte jméno a příjmení, termín ubytování,
-                počet dospělých osob, případně počet a věk dětí. Rezervace pobytu Vám bude následně potvrzena.
-            </p>
+            <h3>@Localizer["OrdersAndDepositHeading"]</h3>
+            <p>@Localizer["OrdersParagraph"]</p>
 
-            <h3>Záloha</h3>
-            <p>
-                Zálohu na pobyt v částce 1500 Kč na osobu a pobyt zasílejte, prosím,
-                po potvrzení závazné rezervace e-mailem převodem na účet.
-                Rezervace pobytu je zrušena, pokud rezervační záloha není uhrazena
-                nejpozději 14 dnů po potvrzení rezervace.
-            </p>
+            <h3>@Localizer["DepositHeading"]</h3>
+            <p>@Localizer["DepositParagraph"]</p>
 
-            <h3>Stornopoplatky</h3>
+            <h3>@Localizer["CancellationHeading"]</h3>
             <div class="price-table-wrapper">
                 <table class="price-table">
                     <tbody>
                         <tr>
-                            <td>Do 30 dnů a více od předpokládaného nástupu</td>
-                            <td>bez poplatku</td>
+                            <td>@Localizer["CancellationRow1Label"]</td>
+                            <td>@Localizer["CancellationRow1Value"]</td>
                         </tr>
                         <tr>
-                            <td>15–29 dnů od předpokládaného nástupu</td>
-                            <td>50 % ze zálohy</td>
+                            <td>@Localizer["CancellationRow2Label"]</td>
+                            <td>@Localizer["CancellationRow2Value"]</td>
                         </tr>
                         <tr>
-                            <td>0–14 dnů</td>
-                            <td>100 % ze zálohy</td>
+                            <td>@Localizer["CancellationRow3Label"]</td>
+                            <td>@Localizer["CancellationRow3Value"]</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
-            <p>
-                Pokud bude za odhlášeného zajištěn náhradník a nebude přitom změněna objednávka,
-                bude záloha vrácena v plné výši.
-                Potvrzením rezervace a případnou úhradou ceny pobytu klient stvrzuje,
-                že byl s těmito storno podmínkami obeznámen a respektuje je.
-                Při předčasně ukončeném pobytu je účtována cena jako za celý objednaný pobyt.
-            </p>
+            <p>@Localizer["CancellationParagraph"]</p>
 
-            <h3>Osobní data zákazníka</h3>
-            <p>
-                Zákazník odesláním objednávky potvrzuje svůj souhlas s uložením jeho osobních dat
-                v databázi poskytovatele. Poskytovatel se zavazuje k použití těchto dat pouze
-                k interním účelům týkajícím se zakázek zákazníka.
-            </p>
+            <h3>@Localizer["PersonalDataHeading"]</h3>
+            <p>@Localizer["PersonalDataParagraph"]</p>
         </div>
     </div>
 </section>
@@ -278,24 +219,24 @@
 <section id="galerie" class="content-section section-light">
     <div class="container">
         <div class="section-heading">
-            <h2>Galerie</h2>
+            <h2>@Localizer["GalleryHeading"]</h2>
         </div>
 
         <div class="gallery-grid">
-            <div class="gallery-item"><img src="~/images/gallery/galerie-01.jpg" alt="Galerie 1" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-02.jpg" alt="Galerie 2" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-03.jpg" alt="Galerie 3" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-04.jpg" alt="Galerie 4" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-05.jpg" alt="Galerie 5" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-06.jpg" alt="Galerie 6" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-07.jpg" alt="Galerie 7" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-08.jpg" alt="Galerie 8" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-09.jpg" alt="Galerie 9" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-10.jpg" alt="Galerie 10" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-11.jpg" alt="Galerie 11" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-12.jpg" alt="Galerie 12" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-13.jpg" alt="Galerie 13" /></div>
-            <div class="gallery-item"><img src="~/images/gallery/galerie-14.jpg" alt="Galerie 14" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-01.jpg" alt="@Localizer["GalleryImage1Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-02.jpg" alt="@Localizer["GalleryImage2Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-03.jpg" alt="@Localizer["GalleryImage3Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-04.jpg" alt="@Localizer["GalleryImage4Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-05.jpg" alt="@Localizer["GalleryImage5Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-06.jpg" alt="@Localizer["GalleryImage6Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-07.jpg" alt="@Localizer["GalleryImage7Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-08.jpg" alt="@Localizer["GalleryImage8Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-09.jpg" alt="@Localizer["GalleryImage9Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-10.jpg" alt="@Localizer["GalleryImage10Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-11.jpg" alt="@Localizer["GalleryImage11Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-12.jpg" alt="@Localizer["GalleryImage12Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-13.jpg" alt="@Localizer["GalleryImage13Alt"]" /></div>
+            <div class="gallery-item"><img src="~/images/gallery/galerie-14.jpg" alt="@Localizer["GalleryImage14Alt"]" /></div>
         </div>
     </div>
 </section>
@@ -304,33 +245,33 @@
     <div class="container narrow">
         <div class="contact-box">
             <h3 class="contact-title-main">
-                Kontakt
+                @Localizer["ContactHeading"]
             </h3>
 
             <div class="contact-columns">
                 <div class="contact-left">
-                    Alexandr Kotora &amp; Ondřej a Hana Tyburcovi<br />
-                    385 01 Horská Kvilda 70
+                    @Localizer["ContactNameLine"]<br />
+                    @Localizer["ContactAddressLine"]
                 </div>
 
                 <div class="contact-right">
                     <div class="contact-row">
-                        <span>IČO:</span>
+                        <span>@Localizer["ContactIcoLabel"]</span>
                         <strong>23145820</strong>
                     </div>
 
                     <div class="contact-row">
-                        <span>Mobil:</span>
+                        <span>@Localizer["ContactMobileLabel"]</span>
                         <strong><a href="tel:+420728610426">728 610 426</a></strong>
                     </div>
 
                     <div class="contact-row">
-                        <span>Č. účtu:</span>
+                        <span>@Localizer["ContactBankLabel"]</span>
                         <strong>315 123 5003 / 0800</strong>
                     </div>
 
                     <div class="contact-row">
-                        <span>E-mail:</span>
+                        <span>@Localizer["ContactEmailLabel"]</span>
                         <strong>
                             <a href="mailto:ukotoru@ukotoru.cz">ukotoru@ukotoru.cz</a>
                         </strong>
@@ -341,14 +282,14 @@
                                href="https://www.facebook.com/HorskaKvildaUKotoru/"
                                target="_blank"
                                rel="noopener noreferrer">
-                            Facebook
+                            @Localizer["FacebookLink"]
                         </a>
 
                         <a class="fb-share"
                                href="https://www.facebook.com/sharer/sharer.php?u=https://ukotoru.cz"
                                target="_blank"
                                rel="noopener noreferrer">
-                            Sdílet
+                            @Localizer["FacebookShare"]
                         </a>
                     </div>
                 </div>
@@ -359,7 +300,7 @@
             </div>
 
             <p class="contact-note">
-                <strong>Přejeme Vám příjemnou dovolenou uprostřed krásné šumavské přírody.</strong>
+                <strong>@Localizer["ContactNote"]</strong>
             </p>
         </div>
     </div>

@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve"><value>U Kotorů</value></data>
+  <data name="HeroKicker" xml:space="preserve">
+  <value>Šumava · Klid · Příroda</value>
+</data>
+  <data name="HeroTitle" xml:space="preserve">
+  <value>Vítáme vás u Kotorů</value>
+</data>
+  <data name="HeroText" xml:space="preserve"><value>Klidné ubytování v centru Národního parku Šumava, ideální pro turistiku, běžky, cyklistiku i odpočinek v přírodě.</value></data>
+  <data name="HeroButtonMore" xml:space="preserve"><value>Zobrazit ubytování</value></data>
+  <data name="HeroButtonContact" xml:space="preserve"><value>Kontakt</value></data>
+
+  <data name="IntroHeading" xml:space="preserve"><value>Úvod</value></data>
+  <data name="IntroParagraph1" xml:space="preserve"><value>Nabízíme ubytování v soukromí na Horské Kvildě (1070 m n. m.) v centrální části NP Šumava. Horská Kvilda je obec s typickou roztroušenou zástavbou a její okolí se může pyšnit vysokou mírou zachovalosti přírody, ať již jde o louky, vřesoviště, rašeliniště nebo lesy.</value></data>
+  <data name="IntroParagraph2" xml:space="preserve"><value>Horská Kvilda je křižovatkou turistických značených cest sloužících v zimním období jako běžecké lyžařské trasy a v letním období jako cyklotrasy a pěší cesty. Jedná se o standardně značené cesty KČT. Z nejzajímavějších míst vybíráme trasy na Kvildu a k pramenům Vltavy nebo na Bučinu a Knížecí Pláně, na Zlatou studnu a Churáňov, na Filipovu Huť a Modravu, na Zhůří a Turnerovu chatu nebo údolím Hamerského potoka k Antýglu a k Vchynicko-Tetovskému plavebnímu kanálu.</value></data>
+  <data name="IntroParagraph3" xml:space="preserve"><value>Dále je zde několik neznačených tras vhodných pro procházky okolím (např. na Jezerní slať a k rysímu a jelenímu výběhu u Kvildy, na Výhledy, na Horní Antýgl s výstupem na vrch Antýgl). Národní park Šumava přitahuje stále více vyznavačů cykloturistiky. Mimo veřejné komunikace lze na kole jezdit pouze po vyznačených cyklotrasách.</value></data>
+  <data name="IntroParagraph4" xml:space="preserve"><value>V letním období lze využít i cyklobusy, tedy dojet jednosměrně daleko jihovýchodním směrem (Horní Vltavice, Boubínský prales) nebo západním (Prášily, Železná Ruda) či severním (Sušice). Šumava nabízí ideální podmínky pro zimní turistiku na běžkách. Lyžařské trasy jsou udržovány od 15. 12. do 31. 3. podle sněhových podmínek.</value></data>
+  <data name="IntroParagraph5" xml:space="preserve"><value>Horská Kvilda a její okolí je tradiční doménou lyžařské turistiky, ale v určité míře má co nabídnout i těm, kteří chtějí běžky vyměnit za sjezdovky či snowboard. Nejbližší areál je na Kvildě (4 km), je vhodný zejména pro začínající lyžaře, děti či výuku lyžování a snowboardingu (lyžařská škola). Areál pro pokročilejší lyžaře je na Churáňově (mj. čtyřsedačka), příp. na německé straně Šumavy (nejbližší je Mitterdorf).</value></data>
+
+  <data name="AccommodationHeading" xml:space="preserve"><value>Ubytování</value></data>
+  <data name="AccommodationParagraph1" xml:space="preserve"><value>Pro dostatečný klid Vaší dovolené je chalupa postavena na krásném místě mimo hlavní silnici, parkování je na vlastním pozemku. Poskytujeme ubytování v apartmánech s vlastním příslušenstvím a možností vlastního vaření, restaurace jsou do 250 metrů (Hospoda U krámu, hotel Rankl).</value></data>
+  <data name="AccommodationParagraph2" xml:space="preserve"><value>Apartmány mají vlastní sociální zařízení (WC, sprchový kout), kuchyňskou linku (lednice, el. dvouvařič, rychlovarná konvice a základní kuchyňské potřeby), televizi a připojení k internetu. Mikrovlnná trouba je k použití ve společenské místnosti. Pro děti do 3 let je k dispozici dětská postýlka.</value></data>
+  <data name="AccommodationParagraph3Part1" xml:space="preserve"><value>Vytápění je ústřední, v celém objektu platí</value></data>
+  <data name="AccommodationNoSmoking" xml:space="preserve"><value>zákaz kouření</value></data>
+  <data name="AccommodationParagraph3Part2" xml:space="preserve"><value>vstup pouze</value></data>
+  <data name="AccommodationIndoorShoes" xml:space="preserve"><value>v domácí obuvi</value></data>
+  <data name="AccommodationParagraph3Part3" xml:space="preserve"><value>V chalupě je k dispozici společenská místnost, dále je zde možnost uložení jízdních kol a lyží. Pro hosty je určeno i venkovní posezení a ohniště.</value></data>
+
+  <data name="AccommodationImage1Alt" xml:space="preserve"><value>Ubytování 1</value></data>
+  <data name="AccommodationImage2Alt" xml:space="preserve"><value>Ubytování 2</value></data>
+  <data name="AccommodationImage3Alt" xml:space="preserve"><value>Ubytování 3</value></data>
+  <data name="AccommodationImage4Alt" xml:space="preserve"><value>Ubytování 4</value></data>
+
+  <data name="PriceHeading" xml:space="preserve"><value>Ceník</value></data>
+  <data name="PriceValidFrom" xml:space="preserve"><value>Ceník platný od 1. 1. 2026</value></data>
+  <data name="PriceIntroParagraph1" xml:space="preserve"><value>Letní a zimní pobyty jsou zpravidla týdenní (so–so). Mimo letní a zimní sezonu je možno objednat i kratší pobyty.</value></data>
+  <data name="PriceIntroParagraph2Part1" xml:space="preserve"><value>Nástup na ubytování je</value></data>
+  <data name="CheckInTime" xml:space="preserve"><value>od 15:30 hod. do 19:30 hod.</value></data>
+  <data name="PriceIntroParagraph2Part2" xml:space="preserve"><value>při ukončení pobytu je nutné pokoje uvolnit</value></data>
+  <data name="CheckOutTime" xml:space="preserve"><value>do 10:00 hod.</value></data>
+
+  <data name="PriceTableService" xml:space="preserve"><value>Služba</value></data>
+  <data name="PriceTableCurrency" xml:space="preserve"><value>Kč</value></data>
+  <data name="PriceAdult" xml:space="preserve"><value>Dospělý, dítě nad 12 let</value></data>
+  <data name="PriceAdultValue" xml:space="preserve"><value>650 / noc</value></data>
+  <data name="PriceChildUnder3" xml:space="preserve"><value>Dítě do 3 let (bez nároku na lůžko)</value></data>
+  <data name="PriceChildUnder3Value" xml:space="preserve"><value>Zdarma</value></data>
+  <data name="PriceChildUnder12" xml:space="preserve"><value>Dítě do 12 let</value></data>
+  <data name="PriceChildUnder12Value" xml:space="preserve"><value>500 / noc</value></data>
+  <data name="PriceSingleOccupancy" xml:space="preserve"><value>Příplatek při ubytování pouze 1 osoby v apartmánu</value></data>
+  <data name="PriceSingleOccupancyValue" xml:space="preserve"><value>250 / noc</value></data>
+  <data name="PriceOneNightOnly" xml:space="preserve"><value>Příplatek při ubytování pouze na 1 noc</value></data>
+  <data name="PriceOneNightOnlyValue" xml:space="preserve"><value>200 / osoba</value></data>
+  <data name="PricePet" xml:space="preserve"><value>Příplatek za domácí zvíře (po domluvě, pouze psi menších plemen)</value></data>
+  <data name="PricePetValue" xml:space="preserve"><value>150 / noc</value></data>
+
+  <data name="EasterHeading" xml:space="preserve"><value>Velikonoční svátky (čtvrtek–pondělí)</value></data>
+  <data name="EasterAdultValue" xml:space="preserve"><value>700 / noc</value></data>
+  <data name="EasterChildUnder12Value" xml:space="preserve"><value>550 / noc</value></data>
+
+  <data name="ChristmasHeading" xml:space="preserve"><value>Vánoční a novoroční svátky (23. 12. – 2. 1.)</value></data>
+  <data name="ChristmasAdultValue" xml:space="preserve"><value>700 / noc</value></data>
+  <data name="ChristmasChildUnder12Value" xml:space="preserve"><value>550 / noc</value></data>
+
+  <data name="ClosedNotice" xml:space="preserve"><value>V listopadu a prosinci (do vánočních svátků) je zavřeno.</value></data>
+  <data name="LocalFeeParagraphPart1" xml:space="preserve"><value>K ceně se připočítává místní poplatek</value></data>
+  <data name="LocalFeeValue" xml:space="preserve"><value>(15 Kč / noc)</value></data>
+  <data name="LocalFeeParagraphPart2" xml:space="preserve"><value>z pobytu obci Horská Kvilda (neplatí osoby mladší 18 let a osoby, které jsou držitelem průkazu ZTP/P a jejich průvodce), za každý započatý den pobytu s výjimkou dne jeho počátku.</value></data>
+
+  <data name="OrdersAndDepositHeading" xml:space="preserve"><value>Objednávky ubytování a záloha</value></data>
+  <data name="OrdersParagraph" xml:space="preserve"><value>Objednávky zasílejte na e-mailovou adresu – uvádějte jméno a příjmení, termín ubytování, počet dospělých osob, případně počet a věk dětí. Rezervace pobytu Vám bude následně potvrzena.</value></data>
+
+  <data name="DepositHeading" xml:space="preserve"><value>Záloha</value></data>
+  <data name="DepositParagraph" xml:space="preserve"><value>Zálohu na pobyt v částce 1500 Kč na osobu a pobyt zasílejte, prosím, po potvrzení závazné rezervace e-mailem převodem na účet. Rezervace pobytu je zrušena, pokud rezervační záloha není uhrazena nejpozději 14 dnů po potvrzení rezervace.</value></data>
+
+  <data name="CancellationHeading" xml:space="preserve"><value>Stornopoplatky</value></data>
+  <data name="CancellationRow1Label" xml:space="preserve"><value>Do 30 dnů a více od předpokládaného nástupu</value></data>
+  <data name="CancellationRow1Value" xml:space="preserve"><value>bez poplatku</value></data>
+  <data name="CancellationRow2Label" xml:space="preserve"><value>15–29 dnů od předpokládaného nástupu</value></data>
+  <data name="CancellationRow2Value" xml:space="preserve"><value>50 % ze zálohy</value></data>
+  <data name="CancellationRow3Label" xml:space="preserve"><value>0–14 dnů</value></data>
+  <data name="CancellationRow3Value" xml:space="preserve"><value>100 % ze zálohy</value></data>
+  <data name="CancellationParagraph" xml:space="preserve"><value>Pokud bude za odhlášeného zajištěn náhradník a nebude přitom změněna objednávka, bude záloha vrácena v plné výši. Potvrzením rezervace a případnou úhradou ceny pobytu klient stvrzuje, že byl s těmito storno podmínkami obeznámen a respektuje je. Při předčasně ukončeném pobytu je účtována cena jako za celý objednaný pobyt.</value></data>
+
+  <data name="PersonalDataHeading" xml:space="preserve"><value>Osobní data zákazníka</value></data>
+  <data name="PersonalDataParagraph" xml:space="preserve"><value>Zákazník odesláním objednávky potvrzuje svůj souhlas s uložením jeho osobních dat v databázi poskytovatele. Poskytovatel se zavazuje k použití těchto dat pouze k interním účelům týkajícím se zakázek zákazníka.</value></data>
+
+  <data name="GalleryHeading" xml:space="preserve"><value>Galerie</value></data>
+  <data name="GalleryImage1Alt" xml:space="preserve"><value>Galerie 1</value></data>
+  <data name="GalleryImage2Alt" xml:space="preserve"><value>Galerie 2</value></data>
+  <data name="GalleryImage3Alt" xml:space="preserve"><value>Galerie 3</value></data>
+  <data name="GalleryImage4Alt" xml:space="preserve"><value>Galerie 4</value></data>
+  <data name="GalleryImage5Alt" xml:space="preserve"><value>Galerie 5</value></data>
+  <data name="GalleryImage6Alt" xml:space="preserve"><value>Galerie 6</value></data>
+  <data name="GalleryImage7Alt" xml:space="preserve"><value>Galerie 7</value></data>
+  <data name="GalleryImage8Alt" xml:space="preserve"><value>Galerie 8</value></data>
+  <data name="GalleryImage9Alt" xml:space="preserve"><value>Galerie 9</value></data>
+  <data name="GalleryImage10Alt" xml:space="preserve"><value>Galerie 10</value></data>
+  <data name="GalleryImage11Alt" xml:space="preserve"><value>Galerie 11</value></data>
+  <data name="GalleryImage12Alt" xml:space="preserve"><value>Galerie 12</value></data>
+  <data name="GalleryImage13Alt" xml:space="preserve"><value>Galerie 13</value></data>
+  <data name="GalleryImage14Alt" xml:space="preserve"><value>Galerie 14</value></data>
+
+  <data name="ContactHeading" xml:space="preserve"><value>Kontakt</value></data>
+  <data name="ContactNameLine" xml:space="preserve"><value>Alexandr Kotora &amp; Ondřej a Hana Tyburcovi</value></data>
+  <data name="ContactAddressLine" xml:space="preserve"><value>385 01 Horská Kvilda 70</value></data>
+  <data name="ContactIcoLabel" xml:space="preserve"><value>IČO:</value></data>
+  <data name="ContactMobileLabel" xml:space="preserve"><value>Mobil:</value></data>
+  <data name="ContactBankLabel" xml:space="preserve"><value>Č. účtu:</value></data>
+  <data name="ContactEmailLabel" xml:space="preserve"><value>E-mail:</value></data>
+  <data name="FacebookLink" xml:space="preserve"><value>Facebook</value></data>
+  <data name="FacebookShare" xml:space="preserve"><value>Sdílet</value></data>
+  <data name="ContactNote" xml:space="preserve"><value>Přejeme Vám příjemnou dovolenou uprostřed krásné šumavské přírody.</value></data>
+  <data name="NavIntro" xml:space="preserve">
+  <value>Úvod</value>
+</data>
+  <data name="NavAccommodation" xml:space="preserve">
+  <value>Ubytování</value>
+</data>
+  <data name="NavPriceList" xml:space="preserve">
+  <value>Ceník</value>
+</data>
+  <data name="NavGallery" xml:space="preserve">
+  <value>Galerie</value>
+</data>
+  <data name="NavContact" xml:space="preserve">
+  <value>Kontakt</value>
+</data>
+
+  <data name="LanguageCz" xml:space="preserve">
+  <value>CZ</value>
+</data>
+  <data name="LanguageEn" xml:space="preserve">
+  <value>EN</value>
+</data>
+  <data name="LanguageDe" xml:space="preserve">
+  <value>DE</value>
+</data>
+</root>

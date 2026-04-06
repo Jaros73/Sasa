@@ -1,9 +1,27 @@
-﻿<!DOCTYPE html>
+﻿@using System.Globalization
+@{
+    var aktualniKultura = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+    var baseUrl = "https://test.ukotoru.cz";
+
+    var canonicalUrl = $"{baseUrl}/{aktualniKultura}";
+    var csUrl = $"{baseUrl}/cs";
+    var enUrl = $"{baseUrl}/en";
+    var deUrl = $"{baseUrl}/de";
+}
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Sasa.SharedResource> Localizer
+<!DOCTYPE html>
 <html lang="cs">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - U Kotorů</title>
+    <link rel="canonical" href="@canonicalUrl" />
+
+    <link rel="alternate" hreflang="cs" href="@csUrl" />
+    <link rel="alternate" hreflang="en" href="@enUrl" />
+    <link rel="alternate" hreflang="de" href="@deUrl" />
+    <link rel="alternate" hreflang="x-default" href="@csUrl" />
+
     <meta name="description" content="Ubytování na Šumavě. Přehled ubytování, ceník, galerie a kontakt." />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
@@ -24,12 +42,22 @@
             </button>
 
             <nav id="site-nav" class="site-nav" aria-label="Hlavní navigace">
-                <a href="#uvod">Úvod</a>
-                <a href="#ubytovani">Ubytování</a>
-                <a href="#cenik">Ceník</a>
-                <a href="#galerie">Galerie</a>
-                <a href="#kontakt">Kontakt</a>
+                <a href="#uvod">@Localizer["NavIntro"]</a>
+                <a href="#ubytovani">@Localizer["NavAccommodation"]</a>
+                <a href="#cenik">@Localizer["NavPriceList"]</a>
+                <a href="#galerie">@Localizer["NavGallery"]</a>
+                <a href="#kontakt">@Localizer["NavContact"]</a>
             </nav>
+            <div class="lang-switch">
+                <a href="/cs"
+                   class="lang-btn @(aktualniKultura == "cs" ? "active" : "")">CZ</a>
+
+                <a href="/en"
+                   class="lang-btn @(aktualniKultura == "en" ? "active" : "")">GB</a>
+
+                <a href="/de"
+                   class="lang-btn @(aktualniKultura == "de" ? "active" : "")">DE</a>
+            </div>
         </div>
     </header>
 

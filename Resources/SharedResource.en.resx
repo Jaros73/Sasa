@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PageTitle" xml:space="preserve"><value>U Kotorů</value></data>
+  <data name="HeroKicker" xml:space="preserve">
+  <value>Šumava · Peace · Nature</value>
+</data>
+  <data name="HeroTitle" xml:space="preserve">
+  <value>Welcome to U Kotorů</value>
+</data>
+  <data name="HeroText" xml:space="preserve"><value>Quiet accommodation in the heart of Šumava National Park, ideal for hiking, cross-country skiing, cycling, and relaxing in nature.</value></data>
+  <data name="HeroButtonMore" xml:space="preserve"><value>View accommodation</value></data>
+  <data name="HeroButtonContact" xml:space="preserve"><value>Contact</value></data>
+
+  <data name="IntroHeading" xml:space="preserve"><value>Introduction</value></data>
+  <data name="IntroParagraph1" xml:space="preserve"><value>We offer private accommodation in Horská Kvilda (1,070 m above sea level), in the central part of Šumava National Park. Horská Kvilda is a village with a typical scattered layout, and its surroundings are known for their well-preserved nature, including meadows, heathlands, peat bogs, and forests.</value></data>
+  <data name="IntroParagraph2" xml:space="preserve"><value>Horská Kvilda is a crossroads of marked tourist trails, used in winter as cross-country ski routes and in summer as cycling and hiking trails. These are standard KČT marked trails. Among the most interesting destinations are routes to Kvilda and the springs of the Vltava River, to Bučina and Knížecí Pláně, Zlatá Studna and Churáňov, Filipova Huť and Modrava, Zhůří and Turner’s Chalet, or through the Hamerský stream valley to Antýgl and the Vchynicko-Tetovský navigation canal.</value></data>
+  <data name="IntroParagraph3" xml:space="preserve"><value>There are also several unmarked trails suitable for local walks (for example to Jezerní slať and the lynx and deer enclosures near Kvilda, to Výhledy, or to Horní Antýgl with an ascent to Antýgl Hill). Šumava attracts more and more cycling enthusiasts. Outside public roads, cycling is only allowed on marked cycling routes.</value></data>
+  <data name="IntroParagraph4" xml:space="preserve"><value>In summer, cycle buses can also be used to travel one way to more distant areas in the southeast (Horní Vltavice, Boubín Forest), west (Prášily, Železná Ruda), or north (Sušice). Šumava offers ideal conditions for winter cross-country tourism. Ski trails are maintained from December 15 to March 31, depending on snow conditions.</value></data>
+  <data name="IntroParagraph5" xml:space="preserve"><value>Horská Kvilda and its surroundings are traditionally a destination for cross-country skiing, but they also offer something for those who prefer downhill skiing or snowboarding. The nearest ski area is in Kvilda (4 km), suitable especially for beginners, children, and ski or snowboard lessons. A more advanced ski area is in Churáňov (including a four-seat chairlift), or on the German side of Šumava, with Mitterdorf being the nearest.</value></data>
+
+  <data name="AccommodationHeading" xml:space="preserve"><value>Accommodation</value></data>
+  <data name="AccommodationParagraph1" xml:space="preserve"><value>For the peace and quiet of your holiday, the cottage is situated in a beautiful location away from the main road, with parking on private property. We provide accommodation in apartments with private facilities and self-catering options; restaurants are within 250 meters (Hospoda U krámu, Hotel Rankl).</value></data>
+  <data name="AccommodationParagraph2" xml:space="preserve"><value>The apartments have private bathrooms (toilet, shower), a kitchenette (fridge, electric double hotplate, kettle, and basic kitchen equipment), television, and internet connection. A microwave oven is available in the common room. A baby cot is available for children under 3 years old.</value></data>
+  <data name="AccommodationParagraph3Part1" xml:space="preserve"><value>Heating is central, smoking is prohibited throughout the building,</value></data>
+  <data name="AccommodationNoSmoking" xml:space="preserve"><value>no smoking</value></data>
+  <data name="AccommodationParagraph3Part2" xml:space="preserve"><value>entry only</value></data>
+  <data name="AccommodationIndoorShoes" xml:space="preserve"><value>in indoor shoes</value></data>
+  <data name="AccommodationParagraph3Part3" xml:space="preserve"><value>The cottage also includes a common room, storage for bicycles and skis, and outdoor seating with a fire pit for guests.</value></data>
+
+  <data name="AccommodationImage1Alt" xml:space="preserve"><value>Accommodation 1</value></data>
+  <data name="AccommodationImage2Alt" xml:space="preserve"><value>Accommodation 2</value></data>
+  <data name="AccommodationImage3Alt" xml:space="preserve"><value>Accommodation 3</value></data>
+  <data name="AccommodationImage4Alt" xml:space="preserve"><value>Accommodation 4</value></data>
+
+  <data name="PriceHeading" xml:space="preserve"><value>Price List</value></data>
+  <data name="PriceValidFrom" xml:space="preserve"><value>Price list valid from January 1, 2026</value></data>
+  <data name="PriceIntroParagraph1" xml:space="preserve"><value>Summer and winter stays are usually weekly (Saturday to Saturday). Outside the main summer and winter seasons, shorter stays may also be arranged.</value></data>
+  <data name="PriceIntroParagraph2Part1" xml:space="preserve"><value>Check-in is available</value></data>
+  <data name="CheckInTime" xml:space="preserve"><value>from 3:30 PM to 7:30 PM</value></data>
+  <data name="PriceIntroParagraph2Part2" xml:space="preserve"><value>and rooms must be vacated</value></data>
+  <data name="CheckOutTime" xml:space="preserve"><value>by 10:00 AM</value></data>
+
+  <data name="PriceTableService" xml:space="preserve"><value>Service</value></data>
+  <data name="PriceTableCurrency" xml:space="preserve"><value>CZK</value></data>
+  <data name="PriceAdult" xml:space="preserve"><value>Adult, child over 12 years</value></data>
+  <data name="PriceAdultValue" xml:space="preserve"><value>650 / night</value></data>
+  <data name="PriceChildUnder3" xml:space="preserve"><value>Child under 3 years (without own bed)</value></data>
+  <data name="PriceChildUnder3Value" xml:space="preserve"><value>Free</value></data>
+  <data name="PriceChildUnder12" xml:space="preserve"><value>Child under 12 years</value></data>
+  <data name="PriceChildUnder12Value" xml:space="preserve"><value>500 / night</value></data>
+  <data name="PriceSingleOccupancy" xml:space="preserve"><value>Surcharge for single occupancy in an apartment</value></data>
+  <data name="PriceSingleOccupancyValue" xml:space="preserve"><value>250 / night</value></data>
+  <data name="PriceOneNightOnly" xml:space="preserve"><value>Surcharge for one-night stay only</value></data>
+  <data name="PriceOneNightOnlyValue" xml:space="preserve"><value>200 / person</value></data>
+  <data name="PricePet" xml:space="preserve"><value>Surcharge for pets (by arrangement, small dogs only)</value></data>
+  <data name="PricePetValue" xml:space="preserve"><value>150 / night</value></data>
+
+  <data name="EasterHeading" xml:space="preserve"><value>Easter holidays (Thursday–Monday)</value></data>
+  <data name="EasterAdultValue" xml:space="preserve"><value>700 / night</value></data>
+  <data name="EasterChildUnder12Value" xml:space="preserve"><value>550 / night</value></data>
+
+  <data name="ChristmasHeading" xml:space="preserve"><value>Christmas and New Year holidays (Dec 23 – Jan 2)</value></data>
+  <data name="ChristmasAdultValue" xml:space="preserve"><value>700 / night</value></data>
+  <data name="ChristmasChildUnder12Value" xml:space="preserve"><value>550 / night</value></data>
+
+  <data name="ClosedNotice" xml:space="preserve"><value>Closed in November and December (until the Christmas holidays).</value></data>
+  <data name="LocalFeeParagraphPart1" xml:space="preserve"><value>A local accommodation fee of</value></data>
+  <data name="LocalFeeValue" xml:space="preserve"><value>(CZK 15 / night)</value></data>
+  <data name="LocalFeeParagraphPart2" xml:space="preserve"><value>is added for the municipality of Horská Kvilda (does not apply to persons under 18 years of age, holders of ZTP/P disability cards, and their companions), for each started day of stay except the day of arrival.</value></data>
+
+  <data name="OrdersAndDepositHeading" xml:space="preserve"><value>Accommodation booking and deposit</value></data>
+  <data name="OrdersParagraph" xml:space="preserve"><value>Please send booking requests by e-mail and include your full name, accommodation dates, number of adults, and number and age of children if applicable. Your reservation will then be confirmed.</value></data>
+
+  <data name="DepositHeading" xml:space="preserve"><value>Deposit</value></data>
+  <data name="DepositParagraph" xml:space="preserve"><value>Please send a deposit of CZK 1,500 per person and stay by bank transfer after your reservation has been confirmed by e-mail. The reservation is cancelled if the deposit is not paid within 14 days of confirmation.</value></data>
+
+  <data name="CancellationHeading" xml:space="preserve"><value>Cancellation fees</value></data>
+  <data name="CancellationRow1Label" xml:space="preserve"><value>30 days or more before arrival</value></data>
+  <data name="CancellationRow1Value" xml:space="preserve"><value>no fee</value></data>
+  <data name="CancellationRow2Label" xml:space="preserve"><value>15–29 days before arrival</value></data>
+  <data name="CancellationRow2Value" xml:space="preserve"><value>50% of the deposit</value></data>
+  <data name="CancellationRow3Label" xml:space="preserve"><value>0–14 days before arrival</value></data>
+  <data name="CancellationRow3Value" xml:space="preserve"><value>100% of the deposit</value></data>
+  <data name="CancellationParagraph" xml:space="preserve"><value>If a replacement guest is provided for the cancelled booking and the original order is not changed, the deposit will be refunded in full. By confirming the reservation and/or paying for the stay, the client confirms that they have been informed of and accept these cancellation conditions. In case of early departure, the full booked stay will be charged.</value></data>
+
+  <data name="PersonalDataHeading" xml:space="preserve"><value>Customer personal data</value></data>
+  <data name="PersonalDataParagraph" xml:space="preserve"><value>By sending a booking request, the customer agrees to the storage of their personal data in the provider’s database. The provider undertakes to use this data solely for internal purposes related to the customer’s booking.</value></data>
+
+  <data name="GalleryHeading" xml:space="preserve"><value>Gallery</value></data>
+  <data name="GalleryImage1Alt" xml:space="preserve"><value>Gallery 1</value></data>
+  <data name="GalleryImage2Alt" xml:space="preserve"><value>Gallery 2</value></data>
+  <data name="GalleryImage3Alt" xml:space="preserve"><value>Gallery 3</value></data>
+  <data name="GalleryImage4Alt" xml:space="preserve"><value>Gallery 4</value></data>
+  <data name="GalleryImage5Alt" xml:space="preserve"><value>Gallery 5</value></data>
+  <data name="GalleryImage6Alt" xml:space="preserve"><value>Gallery 6</value></data>
+  <data name="GalleryImage7Alt" xml:space="preserve"><value>Gallery 7</value></data>
+  <data name="GalleryImage8Alt" xml:space="preserve"><value>Gallery 8</value></data>
+  <data name="GalleryImage9Alt" xml:space="preserve"><value>Gallery 9</value></data>
+  <data name="GalleryImage10Alt" xml:space="preserve"><value>Gallery 10</value></data>
+  <data name="GalleryImage11Alt" xml:space="preserve"><value>Gallery 11</value></data>
+  <data name="GalleryImage12Alt" xml:space="preserve"><value>Gallery 12</value></data>
+  <data name="GalleryImage13Alt" xml:space="preserve"><value>Gallery 13</value></data>
+  <data name="GalleryImage14Alt" xml:space="preserve"><value>Gallery 14</value></data>
+
+  <data name="ContactHeading" xml:space="preserve"><value>Contact</value></data>
+  <data name="ContactNameLine" xml:space="preserve"><value>Alexandr Kotora &amp; Ondřej and Hana Tyburcovi</value></data>
+  <data name="ContactAddressLine" xml:space="preserve"><value>385 01 Horská Kvilda 70</value></data>
+  <data name="ContactIcoLabel" xml:space="preserve"><value>Company ID:</value></data>
+  <data name="ContactMobileLabel" xml:space="preserve"><value>Mobile:</value></data>
+  <data name="ContactBankLabel" xml:space="preserve"><value>Bank account:</value></data>
+  <data name="ContactEmailLabel" xml:space="preserve"><value>E-mail:</value></data>
+  <data name="FacebookLink" xml:space="preserve"><value>Facebook</value></data>
+  <data name="FacebookShare" xml:space="preserve"><value>Share</value></data>
+  <data name="ContactNote" xml:space="preserve"><value>We wish you a pleasant holiday in the heart of beautiful Šumava nature.</value></data>
+  <data name="NavIntro" xml:space="preserve">
+  <value>Intro</value>
+</data>
+  <data name="NavAccommodation" xml:space="preserve">
+  <value>Accommodation</value>
+</data>
+  <data name="NavPriceList" xml:space="preserve">
+  <value>Price List</value>
+</data>
+  <data name="NavGallery" xml:space="preserve">
+  <value>Gallery</value>
+</data>
+  <data name="NavContact" xml:space="preserve">
+  <value>Contact</value>
+</data>
+
+  <data name="LanguageCz" xml:space="preserve">
+  <value>CZ</value>
+</data>
+  <data name="LanguageEn" xml:space="preserve">
+  <value>EN</value>
+</data>
+  <data name="LanguageDe" xml:space="preserve">
+  <value>DE</value>
+</data>
+</root>

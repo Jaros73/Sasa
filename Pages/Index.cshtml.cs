@@ -4,7 +4,7 @@ namespace Sasa.Pages
 {
     public class IndexModel : PageModel
     {
-        public void OnGet()
+        public void OnGet(string? kultura)
         {
         }
     }
