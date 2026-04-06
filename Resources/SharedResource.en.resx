@@ -254,4 +254,10 @@
   <data name="LanguageDe" xml:space="preserve">
   <value>DE</value>
 </data>
+  <data name="FooterBrand" xml:space="preserve">
+  <value>U Kotorů</value>
+</data>
+  <data name="FooterRights" xml:space="preserve">
+  <value>All rights reserved.</value>
+</data>
 </root>
