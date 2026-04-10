@@ -3,7 +3,7 @@
     container_name: ukotoru-web
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Infra/Dockerfile
     image: ukotoru/web:local
     restart: unless-stopped
     expose:
@@ -11,11 +11,11 @@
     networks:
       - edge
     healthcheck:
-      test: ["CMD-SHELL", "curl -fsS http://localhost:8080 || exit 1"]
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 10
-      start_period: 10s
+      start_period: 15s
 
 networks:
   edge:

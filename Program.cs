@@ -1,4 +1,6 @@
 using System.Globalization;
+using System.Net;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Localization.Routing;
 
@@ -14,7 +16,26 @@ builder.Services
     .AddViewLocalization()
     .AddDataAnnotationsLocalization();
 
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+    options.ForwardedHeaders =
+        ForwardedHeaders.XForwardedFor |
+        ForwardedHeaders.XForwardedProto |
+        ForwardedHeaders.XForwardedHost;
+
+    options.KnownIPNetworks.Clear();
+    options.KnownProxies.Clear();
+
+    options.KnownIPNetworks.Add(
+        new System.Net.IPNetwork(IPAddress.Parse("10.89.0.0"), 24)
+    );
+
+    options.ForwardLimit = 2;
+});
+
 var app = builder.Build();
+
+app.UseForwardedHeaders();
 
 var podporovaneKultury = new[]
 {
@@ -72,7 +93,7 @@ app.MapGet("/", (HttpContext context) =>
 
     return Results.Redirect($"/{kultura}");
 });
-
+app.MapGet("/health", () => Results.Ok("OK"));
 app.MapRazorPages();
 
 app.Run();
